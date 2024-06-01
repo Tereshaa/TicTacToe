@@ -75,8 +75,11 @@ const TicTacToe = () => {
         if(winner==="X"){
             titleref.current.innerHTML="Cross Wins"
         }
-        else{
+        else if (winner==="O"){
             titleref.current.innerHTML="Circle Wins"
+        }
+        else{
+            titleref.current.innerHTML="Draw"
         }
     }
 
